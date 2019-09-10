@@ -14,7 +14,7 @@ app.io.on('connection', socket => {
 });
 
 // Main Route
-app.get('/', express.static('./public'));
+app.use('/', express.static('./public'));
 
 // Setup listening port
 app.listen(PORT, () => {
