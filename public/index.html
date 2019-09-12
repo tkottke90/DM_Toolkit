@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>DM Toolkit CMS</title>
-	<link rel='icon' href='./favicon.ico' type='image/x-icon' />
-	<link rel="stylesheet" href="/index.css">
-	<script src="./index.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="index.css">
+	<script src="/socket.io/socket.io.js"></script>
+
 </head>
+
 <body>
-	
+	<!-- Header -->
+	<header class="app-header body__app-header">
+		<button class="menu-btn app-header__menu-btn">
+			<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+				<path fill="#000000" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+			</svg>
+		</button>
+		<h4 class="app-title app-header__app-title">DM Toolkit</h4>
+	</header>
+
+	<!-- Content -->
+	<section class="app-content body__app-content">
+		<textarea class="input app-content__input"></textarea>
+		<div class="display app-content__display"></div>
+	</section>
+
+	<!-- Footer -->
+
+	<script src="index.js"></script>
 </body>
+
 </html>
